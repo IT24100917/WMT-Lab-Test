@@ -1,0 +1,203 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+}
+
+.app {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.app-header h1 {
+  font-size: 2rem;
+  color: #1a1a2e;
+  margin-bottom: 0.25rem;
+}
+
+.app-header p {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+/* FORM CARD */
+.form-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.form-card h2 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: #1a1a2e;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.form-grid input,
+.form-grid select {
+  padding: 10px 14px;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s;
+  width: 100%;
+}
+
+.form-grid input:focus,
+.form-grid select:focus {
+  border-color: #4361ee;
+}
+
+.btn-submit {
+  background: #4361ee;
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-submit:hover {
+  background: #3451d1;
+}
+
+.btn-submit:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+}
+
+/* BOOK LIST */
+.books-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.books-header h2 {
+  font-size: 1.1rem;
+  color: #1a1a2e;
+}
+
+.book-count {
+  background: #e8ecff;
+  color: #4361ee;
+  font-size: 13px;
+  padding: 3px 10px;
+  border-radius: 20px;
+}
+
+.book-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.book-info h3 {
+  font-size: 1rem;
+  color: #1a1a2e;
+  margin-bottom: 4px;
+}
+
+.book-info p {
+  font-size: 13px;
+  color: #666;
+}
+
+.book-meta {
+  display: flex;
+  gap: 8px;
+  margin-top: 6px;
+  flex-wrap: wrap;
+}
+
+.badge {
+  font-size: 12px;
+  padding: 3px 10px;
+  border-radius: 20px;
+  background: #f0f2f5;
+  color: #555;
+}
+
+/* TODO: Add a badge style for genre - example:
+.badge-genre {
+  background: #fff0e6;
+  color: #c45000;
+}
+*/
+
+.btn-delete {
+  background: none;
+  border: 1.5px solid #e0e0e0;
+  color: #999;
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+  margin-left: 1rem;
+}
+
+.btn-delete:hover {
+  background: #fff0f0;
+  border-color: #ff6b6b;
+  color: #ff6b6b;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 3rem;
+  color: #aaa;
+  background: white;
+  border-radius: 12px;
+}
+
+.empty-state p:first-child {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.error-msg {
+  background: #fff0f0;
+  color: #cc0000;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  margin-bottom: 1rem;
+}
+
+.loading {
+  text-align: center;
+  padding: 2rem;
+  color: #aaa;
+}
